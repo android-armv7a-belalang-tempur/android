@@ -14,6 +14,9 @@
   <remote  name="omnirom"
            review="gerrit.omnirom.org"
            fetch="https://github.com/omnirom" />
+           
+  <remote  name="oi"
+           fetch="https://github.com/android-armv7a-belalang-tempur" />
 
   <default revision="refs/tags/android-5.1.1_r5"
            remote="aosp"
@@ -24,7 +27,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="android" remote="omnirom" revision="android-5.1" />
+  <project path="android" name="android" remote="oi" revision="android-5.1" />
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="android_art" remote="omnirom" revision="android-5.1" groups="pdk" />
   <project path="bionic" name="android_bionic" remote="omnirom" revision="android-5.1" groups="pdk" />
