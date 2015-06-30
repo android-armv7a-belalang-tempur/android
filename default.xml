@@ -21,8 +21,7 @@
   <remote  name="cy"
            review="review.cyanogenmod.org"
            fetch="https://github.com/CyanogenMod/" 
-           revision="refs/heads/cm-12.1" 
-           remote="cy" />
+           revision="refs/heads/cm-12.1" />
 
   <default revision="refs/tags/android-5.1.1_r6"
            remote="aosp"
@@ -532,6 +531,6 @@
   <project path="vendor/omni" name="android_vendor_omni" remote="oi" revision="android-5.1" />
   <!--project path="vendor/add" name="android_additional_application_vendors" remote="oi" revision="android-5.1" /-->
   <!-- CyanogenMod -->
-  <project path="packages/apps/AudioFX" name="CyanogenMod/android_packages_apps_AudioFX" />
-  <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" />
+  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="cy" />
+  <project path="external/android-visualizer" name="android_external_android-visualizer" remote="cy" />
 </manifest>
